@@ -1,0 +1,27 @@
+
+.iwrap {
+    padding: 10rpx;
+}
+
+.ititle {
+    font-size: 24rpx;
+    font-weight: bold;
+    color: #000;
+    padding: 10rpx 0;    
+}
+
+.itime {
+    padding: 10rpx 0;
+    color: #838383;
+    font-size: 12rpx;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.icontent {
+    padding: 20rpx;
+    margin-bottom: 30rpx;
+    font-size: 18rpx;
+    color: #333;
+    word-wrap: break-word; 
+    word-break: normal;
+}

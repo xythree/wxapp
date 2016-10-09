@@ -1,0 +1,51 @@
+
+<loading hidden="{{hidden}}" >
+    加载中...
+</loading>
+
+<view class="itab_box">
+    <view wx:for="{{tabLists}}">
+        <text class="{{tabInd==index ? 'tabInd' : ''}}" data-index="{{index}}" bindtap="ontab" >{{item.cn}}</text>
+    </view>
+</view>
+
+<scroll-view class="iwrap" scroll-top="{{scrollTop}}" scroll-y="true" bindscrolltolower="onbindscrolltolower" >
+    
+    <view wx:for="{{lists}}" class="ilists" >
+        <image class="iavatar" src="{{item.author.avatar_url}}" />        
+        <view class="ititle">
+            <navigator class="ititle_text" url="content/index?id={{item.id}}">
+                <text>{{item.title}}</text>
+            </navigator>
+        </view>
+        <view class="icount">
+            <text class="ireply_count">{{item.reply_count}}</text>/<text class="ivisit_count">{{item.visit_count}}</text>
+        </view>
+    </view>
+
+</scroll-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

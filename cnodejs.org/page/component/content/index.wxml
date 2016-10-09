@@ -1,0 +1,21 @@
+<loading hidden="{{hidden}}" >
+    加载中...
+</loading>
+
+
+<view class="iwrap">
+    <view class="ititle">{{title}}</view>
+    <view class="itime">
+        •发布于 {{time}}
+        •作者 {{author}}
+        •{{visitCount}}次浏览
+        •来自{{tagName}}
+    </view>    
+    <view class="icontent">{{content}}</view>
+</view>
+
+
+
+
+
+
