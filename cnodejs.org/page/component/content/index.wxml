@@ -11,7 +11,20 @@
         •{{visitCount}}次浏览
         •来自{{tagName}}
     </view>    
+    
     <view class="icontent">{{content}}</view>
+
+    <view class="col_fade">{{col_fade}}回复</view>
+
+    <view class="user_info" wx:for="{{reply}}" >
+        <view class="user_info_box">
+            <image src="{{item.author.avatar_url}}"></image>
+            <text class="user_name">{{item.author.loginname}}</text>
+            <text class="user_time">{{item.create_at}}</text>
+        </view>
+        <text class="user_info_text">{{item.content}}</text>
+    </view>
+
 </view>
 
 

@@ -12,7 +12,7 @@
 <scroll-view class="iwrap" scroll-top="{{scrollTop}}" scroll-y="true" bindscrolltolower="onbindscrolltolower" >
     
     <view wx:for="{{lists}}" class="ilists" >
-        <image class="iavatar" src="{{item.author.avatar_url}}" />        
+        <image class="iavatar" src="{{item.author.avatar_url}}" ></image>
         <view class="ititle">
             <navigator class="ititle_text" url="content/index?id={{item.id}}">
                 <text>{{item.title}}</text>

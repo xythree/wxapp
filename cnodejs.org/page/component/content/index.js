@@ -10,7 +10,9 @@ Page({
         author: "",
         visitCount: "",
         tagName: "",
-        content: ""
+        content: "",
+        col_fade: 0,
+        reply: {}
     },
     onLoad: function (options) {
         var _t = this        
@@ -36,7 +38,9 @@ Page({
                     author: d.author.loginname,
                     visitCount: d.visit_count,
                     tagName: tagName[0].cn,
-                    content: d.content
+                    content: d.content,
+                    col_fade: d.replies.length,
+                    reply: d.replies
                 })
             }
         })
